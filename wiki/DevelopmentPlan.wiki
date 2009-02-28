@@ -1,0 +1,16 @@
+#summary One-sentence summary of this page.
+#labels Phase-Support,Phase-Implementation
+
+= Introduction =
+
+The source code of version 1.0 will be available about three weeks later.
+
+= Details =
+
+The functions of version 1.0 will include:
+
+  * support converting of 3d model.
+  * support converting of 3d skeletal animtion.
+  * support converting of 3d textures.
+  * support scaling of 3d models.
+  * support changing of up direction of axis.
