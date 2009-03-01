@@ -20,21 +20,21 @@ The functions of version 1.0  includes:
 
    <input filename>    Input fbx filename. 
              (Default: output seperated and compressed model and animation.)
-   /sx                 Seperate animation from the mesh before exporting
-   /d                  Delete meshes without skin info before exporting
-   /o <file>           Optional output model filename
-   /a <file>           Optional output animation filename
-   /m <file>           Optional output material filename
-   /y                  Force the Y axis to up direction.( Default: Z is up!)
-   /l                  Force to left-hand coordinate( Default: right-hand coord!)
-   /s <scale>          The equivalent number of centimeters.( Default: scale is 1m!)
-   /w                  Force swap the winding order
-   /nop                Not optimize the mesh before exporting
-   /nt                 Not copy textures to destination
-   /xc                 Convert to .x compressed binary file( Default)
-   /x                  Convert to .x binary file
-   /xt                 Convert to .x text file
-   /?                  To see this help information.
+   -sx                 Seperate animation from the mesh before exporting
+   -d                  Delete meshes without skin info before exporting
+   -o <file>           Optional output model filename
+   -a <file>           Optional output animation filename
+   -m <file>           Optional output material filename
+   -y                  Force the Y axis to up direction.( Default: Z is up!)
+   -l                  Force to left-hand coordinate( Default: right-hand coord!)
+   -s <scale>          The equivalent number of centimeters.( Default: scale is 1m!)
+   -w                  Force swap the winding order
+   -nop                Not optimize the mesh before exporting
+   -nt                 Not copy textures to destination
+   -xc                 Convert to .x compressed binary file( Default)
+   -x                  Convert to .x binary file
+   -xt                 Convert to .x text file
+   -?                  To see this help information.
 
 e.g. 
   Fbx2X box.fbx
