@@ -1,16 +1,80 @@
-#labels Phase-Support,Phase-Implementation
-# fbx2xfile to be available within three weeks.
+#labels Phase-Implementation,Phase-Deploy
+# fbx2xfile already available now.
 
 = Introduction =
 
-The source code of version 1.0 will be available about three weeks later.
+The source code of version 1.0 has already been available now.
 
 = Details =
 
-The functions of version 1.0 will include:
+The functions of version 1.0  includes:
 
   * support converting of 3d model.
   * support converting of 3d skeletal animtion.
   * support converting of 3d textures.
   * support scaling of 3d models.
   * support changing of up direction of axis.
+
+
+1.  Usage:  Fbx2X.exe  <options> <input filename>
+
+   <input filename>    Input fbx filename. 
+             (Default: output seperated and compressed model and animation.)
+   /sx                 Seperate animation from the mesh before exporting
+   /d                  Delete meshes without skin info before exporting
+   /o <file>           Optional output model filename
+   /a <file>           Optional output animation filename
+   /m <file>           Optional output material filename
+   /y                  Force the Y axis to up direction.( Default: Z is up!)
+   /l                  Force to left-hand coordinate( Default: right-hand coord!)
+   /s <scale>          The equivalent number of centimeters.( Default: scale is 1m!)
+   /w                  Force swap the winding order
+   /nop                Not optimize the mesh before exporting
+   /nt                 Not copy textures to destination
+   /xc                 Convert to .x compressed binary file( Default)
+   /x                  Convert to .x binary file
+   /xt                 Convert to .x text file
+   /?                  To see this help information.
+
+e.g. 
+  Fbx2X box.fbx
+
+Note: the above command running on cmd of windows will output a box.x file, which can be viewed in DirectX Viewer.
+
+ Fbx2X box.fbx  boxx.x
+
+Note: force the output filename to be boxx.x.
+
+2. Compilation steps,
+
+1) Install directX SDK(version 2007 or 2008) 
+2) Install fbx SDK(version 2009.1 or 2009.3) 
+3) Set c++ directory: include and lib for above two sdk 
+4) Use VS2005 to compile the solution.
+
+
+3. Appendice: compile FbxParser
+
+DYNAMIC LINK LIBRARY : FbxParser Project Overview
+
+Note: This project requires FBX sdk libs to be compiled successfully. 
+In order to compile this project to get a FbxParser.dll, you have to follow these steps.
+
+1. Install FBX sdk(version 2009.1)
+http://usa.autodesk.com/adsk/servlet/mform?siteID=123112&id=10775847
+
+
+
+2. By default, FBXSDK is installed to C:\Program Files\Autodesk\FBX\FbxSdk\2009.1, so you can skip this step if you installs to the default folder.
+	
+	But if your FBXSDK is installed to other directory, please edit Fbx3D.vcProj to change the folder as your installed. 
+  You can replace the  “C:\Program Files\Autodesk\FBX\FbxSdk\2009.1” with your FBXSDK install path, for example: "D:\XYZ-ABC\Autodesk\FBX\FbxSdk\2009.1".		 
+
+  Note：you can also change in VS2005, by change the "AdditionalLibraryDirectories" and "AdditionalIncludeDirectories".
+
+4. Rebuild FbxParser project completely.
+
+Now, you should have got a FbxParser.dll in the output directory.
+
+Longjiang li
+Email:Longjiang.lee@gmail.com
