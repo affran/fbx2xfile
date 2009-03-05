@@ -13,11 +13,11 @@ V1.0:
 
 With the help of this tool, it is easy to convert a 3dsmax animation model to .x format by using FBX format as an intermediate format, which is an official format of Autodesk. 
 
-* support converting of 3d model.
-* support converting of 3d skeletal animation.
-* support converting of 3d textures.
-* support (optional) scaling of 3d models.
-* support (optional) changing of up direction of axis.
-* support (optional) swapping of the winding order
-* support (optional) exchanging between left-hand coordinate(default) and right-hand coord
-* support (optional) deleting meshes without skin info before exporting 
+  * support converting of 3d model.
+  * support converting of 3d skeletal animation.
+  * support converting of 3d textures.
+  * support (optional) scaling of 3d models.
+  * support (optional) changing of up direction of axis.
+  * support (optional) swapping of the winding order
+  * support (optional) exchanging between left-hand coordinate(default) and right-hand coord
+  * support (optional) deleting meshes without skin info before exporting 
