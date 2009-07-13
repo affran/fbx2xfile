@@ -1,6 +1,10 @@
 #labels Featured,Phase-QA,Phase-Design
 Updating History
 
+V1.03:
+
+   1. Added support for Fbx sdk 2010.0
+
 V1.02:
 
    1. Changed the default coordinate to be left handed.
